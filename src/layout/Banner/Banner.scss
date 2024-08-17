@@ -1,0 +1,61 @@
+.banner_home {
+  .slick-prev,
+  .slick-next {
+    font-size: 45px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-200%);
+    transition: color 0.3s ease;
+
+    &::before {
+      font-size: 0;
+    }
+    &:hover {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    &.slick-prev {
+      left: 10px;
+    }
+    &.slick-next {
+      right: 20px;
+    }
+  }
+  .item_banner {
+    position: relative;
+
+    &:hover {
+      .play_button {
+        opacity: 1;
+        z-index: 2;
+      }
+    }
+
+    .play_button {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+    }
+  }
+}
+.ant-modal-content {
+  .ant-modal-close {
+    top: -33px;
+    right: -43px;
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0.6);
+    &:hover {
+      background-color: rgb(192, 192, 192);
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.movie_detail {
+  .detail_banner {
+    .proper_screen {
+      .line_crumb {
+        background: #ffffff1a;
+        height: 1px;
+        position: absolute;
+        top: 46px;
+        width: 100%;
+      }
+      .movie_detail_slide {
+        padding: 16px 99px 20px;
+        ul {
+          .slider_bread_detail {
+            border-bottom: 1px solid #ffcb05;
+          }
+          .slider_bread::after {
+            content: '>';
+            margin-left: 8px;
+            position: absolute;
+          }
+          li {
+            color: #fff;
+          }
+        }
+        .movie_trailer {
+          padding-right: 22px;
+          position: relative;
+          text-align: left;
+          img {
+            height: 270px;
+            margin-top: 20px;
+            object-fit: contain;
+            width: 220px;
+          }
+          .slider_video_icons {
+            .tl_button {
+              background-color: rgba(128, 128, 128, 0.5);
+            }
+            button {
+              display: flex;
+              height: auto !important;
+              left: 18%;
+              margin: 0 auto;
+              position: absolute;
+              text-align: center;
+              top: 35%;
+            }
+          }
+        }
+        .movie_detail {
+          .movie_standard {
+            ul {
+              li {
+                align-items: center;
+                background: #fff;
+                border-radius: 4px;
+                box-shadow: 0 1px 0 #e8e8e8;
+                display: flex;
+                float: left;
+                height: 33px;
+                justify-content: center;
+                list-style: none;
+                margin-bottom: 5px;
+                margin-right: 4px;
+                padding: 6px 12px;
+                width: 65px;
+              }
+            }
+          }
+          .slider_detail_rate {
+            .custom_rate {
+              li {
+                color: #fadb14;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+:where(.css-dev-only-do-not-override-1kuana8).ant-rate .ant-rate-star-first,
+:where(.css-dev-only-do-not-override-1kuana8).ant-rate .ant-rate-star-second {
+  color: rgb(161, 161, 161);
+  transition: all 0.2s;
+  user-select: none;
+}
